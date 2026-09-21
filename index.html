@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - davina natasya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f3f4f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 900px;
+            max-width: 95%;
+            margin: 30px auto;
+            background: white;
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        /* BAGIAN KIRI */
+        .sidebar {
+            background: #173b57;
+            color: white;
+            padding: 30px 25px;
+        }
+
+        .foto {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .sidebar h1 {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        .jabatan {
+            text-align: center;
+            color: #dbeafe;
+            margin-bottom: 30px;
+        }
+
+        .sidebar h2 {
+            font-size: 17px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            padding-bottom: 5px;
+        }
+
+        .sidebar p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .skill {
+            margin-bottom: 10px;
+        }
+
+        .skill-name {
+            font-size: 14px;
+            margin-bottom: 4px;
+        }
+
+        .bar {
+            background: rgba(255,255,255,0.3);
+            height: 8px;
+            border-radius: 10px;
+        }
+
+        .bar span {
+            display: block;
+            height: 100%;
+            background: white;
+            border-radius: 10px;
+        }
+
+        /* BAGIAN KANAN */
+        .content {
+            padding: 35px;
+        }
+
+        .content section {
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #173b57;
+            font-size: 22px;
+            border-bottom: 2px solid #173b57;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #173b57;
+        }
+
+        .item h3 {
+            color: #173b57;
+            font-size: 17px;
+        }
+
+        .tahun {
+            color: #777;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        .kontak p {
+            margin-bottom: 5px;
+        }
+
+        /* TOMBOL */
+        .print-btn {
+            display: block;
+            margin: 20px auto;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #173b57;
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .print-btn:hover {
+            background: #245a80;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                text-align: center;
+            }
+
+            .content {
+                padding: 25px;
+            }
+        }
+
+        /* SAAT DICETAK */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .container {
+                width: 100%;
+                margin: 0;
+                box-shadow: none;
+            }
+
+            .print-btn {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <img src="c:\Users\Lab TJKT\Documents\cv davina\foto.jpg.jpeg" class="foto" alt="Foto Profil">
+
+            <h1>Davina natasya</h1>
+            <div class="jabatan">
+                Guru / Pendidik
+            </div>
+
+            <h2>Kontak</h2>
+
+            <div class="kontak">
+                <p>📱 088245238673</p>
+                <p>📧 natasyadavina34@gmail.com</p>
+                <p>📍 Balikpapan, Kalimantan Timur</p>
+            </div>
+
+            <h2>Keahlian</h2>
+
+            <div class="skill">
+                <div class="skill-name">Microsoft Excel</div>
+                <div class="bar">
+                    <span style="width: 90%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Akuntansi</div>
+                <div class="bar">
+                    <span style="width: 95%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Komputer Akuntansi</div>
+                <div class="bar">
+                    <span style="width: 85%;"></span>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Administrasi</div>
+                <div class="bar">
+                    <span style="width: 90%;"></span>
+                </div>
+            </div>
+
+            <h2>Bahasa</h2>
+            <p>Bahasa Indonesia — Aktif</p>
+            <p>Bahasa Inggris — Dasar</p>
+
+        </aside>
+
+
+        <!-- KONTEN UTAMA -->
+        <main class="content">
+
+            <section>
+                <h2>Profil</h2>
+
+                <p>
+                    Saya adalah seorang pendidik yang memiliki pengalaman
+                    dalam bidang TJKT, administrasi, dan pembelajaran
+                    berbasis teknologi. Memiliki kemampuan dalam penyusunan
+                    perangkat pembelajaran, pengolahan data menggunakan
+                    Microsoft Excel.
+                </p>
+            </section>
+
+
+            <section>
+                <h2>Pengalaman Kerja</h2>
+
+                <div class="item">
+                    <h3>kantorpos</h3>
+                    <div class="tahun">2020 - Sekarang</div>
+
+                    <ul>
+                        <li>legalisir dokumen.</li>
+                        <li>jual matrai.</li>
+                        <li>Melayani pembayaran air.</li>
+                        <li>Melayani pembayaran listrik.</li>
+                    </ul>
+                </div>
+
+                <div class="item">
+                    <h3>Administrasi</h3>
+                    <div class="tahun">april 2026-juni 2026</div>
+
+                    <ul>
+                        <li>legalisir dokumen.</li>
+                        <li>jual matrai.</li>
+                        <li>Melayani pembayaran air.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+
+            <section>
+                <h2>Pendidikan</h2>
+
+                <div class="item">
+                    <h3>SMK</h3>
+                    <div class="tahun">2024-2027</div>
+                    <p>
+                        SMK Airlangga 
+                    </p>
+                </div>
+
+                <div class="item">
+                    <h3>SMK</h3>
+                    <div class="tahun">2024-2027</div>
+                    <p>
+                        SMK Airlangga
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section>
+                <h2></h2>
+
+                <div class="item">
+                    <h3></h3>
+                    <div class="tahun"></div>
+                </div>
+
+                <div class="item">
+                    <h3></h3>
+                    <div class="tahun"></div>
+                </div>
+
+                <div class="item">
+                    <h3></h3>
+                    <div class="tahun"></div>
+                </div>
+
+            </section>
+
+
+            <section>
+                <h2>Referensi</h2>
+
+                <p>
+                    Tersedia apabila diperlukan.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- TOMBOL CETAK -->
+    <button class="print-btn" onclick="window.print()">
+        🖨️ Cetak / Simpan PDF
+    </button>
+
+</body>
+</html>
